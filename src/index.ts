@@ -1,4 +1,7 @@
+import * as fs from "fs";
+
 
 export function log(text: string): void {
-    console.log(text);
+    let message = text;
+    console.log(message);
 }
