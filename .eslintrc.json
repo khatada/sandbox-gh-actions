@@ -16,5 +16,9 @@
         "sourceType": "module",
         "project": "./tsconfig.json"
     },
-    "rules": {}
+    "rules": {
+        "prefer-const": [
+            "error"
+        ]
+    }
 }
