@@ -8,11 +8,12 @@ jobs:
       - uses: actions/checkout@v1
       - name: npm install
         run: npm install
+      - name: build
+        run: npm run build
       - name: eslint
         uses: reviewdog/action-eslint@v1
         with:
           github_token: ${{ secrets.github_token }}
-          reporter: github-pr-review # Change reporter.
+          reporter: github-pr-review
           eslint_flags: 'src/**/*.{ts,tsx}'
-      - name: build
-        run: npm run build
+          fail_on_error: true
