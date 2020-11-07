@@ -1,5 +1,5 @@
 
 export function log(text: string): void {
-    let message = text;
+    const message = text;
     console.log(message);
 }
