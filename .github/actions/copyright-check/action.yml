@@ -1,0 +1,9 @@
+name: Copyright Check
+description: Check if file contains copyright comment.
+inputs:
+  ignore-files:
+    description: 'Ignore comma separated file names (ex. .eslintrc.js,)'
+    required: false
+runs:
+  using: node12
+  main: 'dist/index.js'
